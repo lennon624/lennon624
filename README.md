@@ -1,19 +1,44 @@
-[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=lennon624&show_icons=true&theme=merko)](https://github.com/anuraghazra/github-readme-stats)
+# Hi, I'm Lennon.
 
-# 我是一个一个:mouse: :mouse2: :rat:
+> Backend & Data Engineer
+> Navigating the complexities of distributed systems.
 
+---
 
-<!--
-**lennon624/lennon624** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### 👨‍💻 About Me
 
-Here are some ideas to get you started:
+I am a backend engineer specializing in **Java Ecosystem** and **Real-time Data Processing**.
+I focus on building systems that balance performance with maintainability.
+My work involves designing reliable pipelines and optimizing backend throughput.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+### 🛠 Tech Stack
+
+**Core Engineering**
+- **Java**: Proficient in JUC, JVM tuning, and enterprise application development.
+- **Go**: Utilizing for high-concurrency microservices and tooling.
+
+**Streaming & Data**
+- **Apache Flink**: Implementing stateful stream processing and CEP patterns.
+- **Kafka**: Handling high-throughput message ingestion and decoupling services.
+
+**Persistence & Caching**
+- **MySQL**: Experienced in query optimization and transaction isolation levels.
+- **Redis**: Implementing complex caching structures and distributed primitives.
+
+---
+
+### 🎯 Current Focus
+
+- Understanding the source code of **Apache Flink** (State Backends & Checkpointing).
+- Practicing **System Design** patterns for large-scale applications.
+- exploring **Cloud-Native** infrastructure solutions.
+
+---
+
+### ⚖️ 
+> "There are no solutions. There are only trade-offs."
+> — *Thomas Sowell*
+
+---
