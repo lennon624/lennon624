@@ -2,7 +2,6 @@ name: Generate Neon Snake
 
 on:
   schedule:
-    # 每天跑一次（UTC 时间 0 点 = 北京时间 8 点）
     - cron: "0 0 * * *"
   workflow_dispatch:
 
@@ -14,6 +13,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 🔑 关键一步：把当前仓库 checkout 下来
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Generate snake SVG
         uses: lennon624/snk@main
         with:
