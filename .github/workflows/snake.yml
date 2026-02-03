@@ -14,20 +14,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # 1️⃣ 生成原始 snake.svg（官方、稳定）
+
       - uses: Platane/snk@v3
         with:
           github_user_name: lennon624
           github_token: ${{ secrets.GITHUB_TOKEN }}
           output_branch: output
           outputs: |
-            snake.svg
+            output/snake.svg
 
-     
+   
       - name: Make it pink neon 💗
         run: |
           cd output
-
           cp snake.svg neon-snake.svg
 
           sed -i \
@@ -39,7 +38,7 @@ jobs:
             -e 's/#ffffff/#0b0014/g' \
             neon-snake.svg
 
-      # 3️⃣ 提交 neon 版本
+      # 3️⃣ 提交
       - name: Commit neon snake
         uses: EndBug/add-and-commit@v9
         with:
