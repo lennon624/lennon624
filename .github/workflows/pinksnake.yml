@@ -13,9 +13,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 🔑 关键一步：把当前仓库 checkout 下来
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Generate snake SVG
         uses: lennon624/snk@main
@@ -30,3 +31,4 @@ jobs:
         with:
           message: "chore: update neon snake 🐍"
           add: "output/*.svg"
+          pull: "--rebase --autostash"
