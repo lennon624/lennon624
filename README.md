@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/lennon624/lennon624/output/neon-snake.svg" />
+  <img src="https://raw.githubusercontent.com/lennon624/lennon624/main/output/neon-snake.svg" />
 </p>
 
 # Hi, I'm Lennon.
