@@ -1,4 +1,4 @@
-name: Generate Snake
+name: Neon Snake
 
 on:
   workflow_dispatch:
@@ -12,16 +12,37 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+      - uses: actions/checkout@v4
 
-      - name: Generate snake SVG
-        uses: Platane/snk@v3
+      # 1️⃣ 生成原始 snake.svg（官方、稳定）
+      - uses: Platane/snk@v3
         with:
           github_user_name: lennon624
           github_token: ${{ secrets.GITHUB_TOKEN }}
           output_branch: output
           outputs: |
-            snake.svg?palette=dracula
+            snake.svg
+
+     
+      - name: Make it pink neon 💗
+        run: |
+          cd output
+
+          cp snake.svg neon-snake.svg
+
+          sed -i \
+            -e 's/#ebedf0/#2a123f/g' \
+            -e 's/#9be9a8/#ff77c6/g' \
+            -e 's/#40c463/#ff4fd8/g' \
+            -e 's/#30a14e/#ff2ecb/g' \
+            -e 's/#216e39/#ff1493/g' \
+            -e 's/#ffffff/#0b0014/g' \
+            neon-snake.svg
+
+      # 3️⃣ 提交 neon 版本
+      - name: Commit neon snake
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: "chore: add pink neon snake 💗"
+          add: "neon-snake.svg"
+          cwd: "output"
