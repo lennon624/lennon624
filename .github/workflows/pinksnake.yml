@@ -1,0 +1,5 @@
+- uses: lennon624/snk@main
+  with:
+    github_user_name: lennon624
+    outputs: |
+      output/neon-snake.svg?palette=jpn-neon-pink

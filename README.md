@@ -1,7 +1,4 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/lennon624/snk/output/neon-snake.svg" />
-</p>
-
+![neon snake](https://raw.githubusercontent.com/lennon624/lennon624/output/neon-snake.svg)
 # Hi, I'm Lennon.
 
 > Backend & Data Engineer
