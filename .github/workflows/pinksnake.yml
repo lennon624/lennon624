@@ -1,5 +1,29 @@
-- uses: lennon624/snk@main
-  with:
-    github_user_name: lennon624
-    outputs: |
-      output/neon-snake.svg?palette=jpn-neon-pink
+name: Generate Neon Snake
+
+on:
+  schedule:
+    # 每天跑一次（UTC 时间 0 点 = 北京时间 8 点）
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Generate snake SVG
+        uses: lennon624/snk@main
+        with:
+          github_user_name: lennon624
+          outputs: |
+            output/neon-snake.svg?palette=jpn-neon-pink
+            output/neon-snake-dark.svg?palette=jpn-neon-pink&dark=true
+
+      - name: Commit & Push SVG
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: "chore: update neon snake 🐍"
+          add: "output/*.svg"
