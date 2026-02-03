@@ -1,4 +1,4 @@
-name: Generate Snake (Dracula)
+name: Generate Snake
 
 on:
   workflow_dispatch:
@@ -12,17 +12,16 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-   
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          persist-credentials: false
 
       - name: Generate snake SVG
         uses: Platane/snk@v3
         with:
           github_user_name: lennon624
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          output_branch: output
           outputs: |
             snake.svg?palette=dracula
