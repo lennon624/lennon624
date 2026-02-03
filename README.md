@@ -1,3 +1,6 @@
+![GitHub Snake](https://raw.githubusercontent.com/Lennon624/Lennon624/output/github-contribution-grid-snake.svg)
+
+![GitHub Snake Dark](https://raw.githubusercontent.com/Lennon624/Lennon624/output/github-contribution-grid-snake-dark.svg)
 # Hi, I'm Lennon.
 
 > Backend & Data Engineer
