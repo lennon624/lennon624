@@ -12,6 +12,13 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
+   
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
       - name: Generate snake SVG
         uses: Platane/snk@v3
         with:
