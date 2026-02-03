@@ -1,9 +1,9 @@
 name: Generate Neon Snake
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "0 0 * * *"
-  workflow_dispatch:
 
 permissions:
   contents: write
@@ -23,12 +23,12 @@ jobs:
         with:
           github_user_name: lennon624
           outputs: |
-            output/neon-snake.svg?palette=jpn-neon-pink
-            output/neon-snake-dark.svg?palette=jpn-neon-pink&dark=true
+            neon-snake.svg?palette=jpn-neon-pink
+            neon-snake-dark.svg?palette=jpn-neon-pink&dark=true
 
       - name: Commit & Push SVG
         uses: EndBug/add-and-commit@v9
         with:
           message: "chore: update neon snake 🐍"
-          add: "output/*.svg"
+          add: "*.svg"
           pull: "--rebase --autostash"
