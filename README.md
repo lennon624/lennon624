@@ -8,7 +8,7 @@
 > Navigating the complexities of distributed systems. -->
 <p align="left">
  
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=500&repeat=false&color=E6EDF3&width=600&lines=Hi%2C+I'm+Lennon." />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=500&repeat=false&color=24292F&width=600&lines=Hi%2C+I'm+Lennon." />
   <br/>
 
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=300&repeat=true&color=58A6FF&width=600&lines=Backend+%26+Data+Engineer" />
