@@ -7,17 +7,16 @@
 > Backend & Data Engineer
 > Navigating the complexities of distributed systems. -->
 <p align="left">
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=500&repeat=false&color=000000&width=600&lines=Hi%2C+I'm+Lennon." />
+ 
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=500&repeat=false&color=E6EDF3&width=600&lines=Hi%2C+I'm+Lennon." />
+  <br/>
+
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=300&repeat=true&color=58A6FF&width=600&lines=Backend+%26+Data+Engineer" />
+  <br/>
+
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1500&repeat=true&color=8B949E&width=800&lines=Navigating+the+complexities+of+distributed+systems." />
 </p>
 
-<p align="left">
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=300&repeat=false&color=36BCF7&width=600&lines=Backend+%26+Data+Engineer" />
-</p>
-
-<p align="left">
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1500&repeat=false&color=6A737D&width=800&lines=Navigating+the+complexities+of+distributed+systems."/>
-
-</p>
 
 
 ---
